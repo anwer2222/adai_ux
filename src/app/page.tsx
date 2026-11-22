@@ -382,7 +382,7 @@ export default function HomePage() {
     <div className="h-screen w-screen flex flex-col bg-slate-100 overflow-hidden">
       {/* TOP BAR: Brand + Role Switcher + Language + Reset */}
       <header className="h-16 bg-white border-b border-slate-200 px-4 flex items-center justify-between gap-3 shrink-0 z-30 shadow-2xs">
-        {/* Brand */}
+        {/* Brand */} 
         <div className="flex items-center gap-3 min-w-0">
         <Image className="hero-logo" src="/logo_s.jpg" alt="شعار ADAI" width={50} height={75} priority />
 
