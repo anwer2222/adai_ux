@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --bg-canvas: #f2f6fa;
+  --surface: #ffffff;
+  --surface-muted: #f8fafc;
+  --border-subtle: #e2e8f0;
+  --ink-primary: #0f172a;
+  --ink-secondary: #475569;
+  --accent-teal: #0ea5a4;
+  --accent-blue: #0284c7;
+  --risk-amber: #f59e0b;
+  --risk-red: #ef4444;
+  --verified-green: #10b981;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-canvas);
+  color: var(--ink-primary);
+  font-family: "IBM Plex Sans Arabic", "SF Arabic", "Segoe UI", system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Crisp custom scrollbars for drawers */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+@keyframes pulseRing {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(245, 158, 11, 0);
+  }
+}
+
+.pulse-amber {
+  animation: pulseRing 2.2s infinite;
+}
